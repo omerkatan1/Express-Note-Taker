@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/omerkatan1/Express-Note-Taker/issues"
   },
-  "homepage": "https://github.com/omerkatan1/Express-Note-Taker#readme"
+  "homepage": "https://github.com/omerkatan1/Express-Note-Taker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
 }
