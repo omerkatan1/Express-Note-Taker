@@ -2,6 +2,7 @@
 
 header {
     position: fixed;
+    display: table;
     height: 100px;
     background-color: whitesmoke;
     -moz-box-shadow: 0 0 10px #6d6d6d;
@@ -9,6 +10,16 @@ header {
     box-shadow: 0 0 10px #6d6d6d;
 }
 
+#header-titleDiv {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
 .header-text {
-    
+    font-family: 'Raleway', sans-serif;
+}
+
+#header-newNoteDiv {
+    text-align: center;
 }
