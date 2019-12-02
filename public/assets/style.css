@@ -1,3 +1,5 @@
+/* header stuff */
+
 header {
     position: fixed;
     height: 100px;
@@ -5,4 +7,8 @@ header {
     -moz-box-shadow: 0 0 10px #6d6d6d;
     -webkit-box-shadow: 0 0 10px #6d6d6d;
     box-shadow: 0 0 10px #6d6d6d;
+}
+
+.header-text {
+    
 }
