@@ -25,6 +25,8 @@ header {
 }
 
 .header-text {
+    color: whitesmoke;
+    font-size: 65px;
     margin-top: 22px;
     font-family: 'Raleway', sans-serif;
 }
@@ -52,6 +54,12 @@ header {
     padding: 0;
 }
 
-footer {
 
+#title-div {
+    margin-top: 400px;
+    display: inline-block;
+    text-align: right;
+    background-color: black;
+    width: 700px;
+    height: 125px;
 }
