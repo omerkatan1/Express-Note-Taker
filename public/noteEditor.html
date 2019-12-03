@@ -42,7 +42,7 @@
                                 <a class="header-link" href="./myNotes.html">My Notes</a>
                             </div>
                             <div class="col-4 header-linkBox2">
-                                <a class="header-link" href="">Link 2</a>
+                                <a class="header-link" href="./index.html">Home</a>
                             </div>
                             <div class="col-4 header-linkBox3">
                                 <a class="header-link" href="">Link 3</a>
@@ -59,8 +59,10 @@
                     </div>
 
                     <div id="header-newNoteDiv" class="col-4">
+
+                        <!-- new note button -->
                         <form action="./noteEditor.html">
-                            <button id="newNote-button" class="btn"><i class="fa fa-pencil"></i> New Note</button>
+                            <button id="newNote-button" onclick="newNote()" class="btn"><i class="fa fa-pencil"></i> New Note</button>
                         </form>
                     </div>
 
@@ -73,6 +75,18 @@
 
     </header>
 
+
+    <div class="container-fluid">
+
+        <div id="body-content" class="row">
+
+            <div class="col-2"></div>
+            <textarea id="notepad" class="col-8"></textarea>
+            <div class="col-2"></div>
+        </div>
+
+
+    </div>
 
     
 </body>

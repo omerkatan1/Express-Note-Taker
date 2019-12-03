@@ -1,5 +1,6 @@
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
 }
@@ -67,4 +68,13 @@ header {
 #body-content {
     margin: 0;
     padding: 0;
+    height: 100vh;
+}
+
+#notepad {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    background-color: rgb(223, 214, 191);
+    border: none;
+    padding: 30px;
 }
