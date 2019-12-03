@@ -20,7 +20,7 @@ header {
     box-shadow: 0 0 10px #6d6d6d;
 }
 
-#header-titleDiv {
+#header-links {
     text-align: center;
 }
 
@@ -46,6 +46,23 @@ header {
     color: rgb(255, 255, 255);
 }
 
+.header-linkBox1 {
+    text-align: right;
+    margin-top: 35px;
+}
+.header-linkBox2 {
+    margin-top: 35px;
+    text-align: center;
+}
+.header-linkBox3 {
+    margin-top: 35px;
+    text-align: left;
+    padding-left: 30px;
+}
+.header-link {
+    color: lightslategray;
+}
+
 
 /* body content stuff */
 
@@ -59,7 +76,7 @@ header {
     margin-top: 400px;
     display: inline-block;
     text-align: right;
-    background-color: black;
+    background-color: royalblue;
     width: 700px;
     height: 125px;
 }
