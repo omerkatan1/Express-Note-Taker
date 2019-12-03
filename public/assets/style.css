@@ -2,6 +2,8 @@
 body, html {
     margin: 0;
     padding: 0;
+    background-image: url('./images/notepad-3297994_1920.jpg');
+    background-repeat: no-repeat;
 }
 
 
@@ -48,4 +50,8 @@ header {
 #body-content {
     margin: 0;
     padding: 0;
+}
+
+footer {
+
 }
