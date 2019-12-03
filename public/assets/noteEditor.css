@@ -77,4 +77,5 @@ header {
     background-color: rgb(223, 214, 191);
     border: none;
     padding: 30px;
+    resize: none;
 }
