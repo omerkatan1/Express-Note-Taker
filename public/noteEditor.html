@@ -10,6 +10,8 @@
     <!-- jquery icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- index.js -->
+    <script src="js/index.js"></script>
 
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -53,7 +55,7 @@
 
                     </div>
 
-                    <!-- placeholder -->
+                    <!-- blank Space -->
                     <div class="col-4">
 
                     </div>
@@ -62,7 +64,7 @@
 
                         <!-- new note button -->
                         <form action="./noteEditor.html">
-                            <button id="newNote-button" onclick="newNote()" class="btn"><i class="fa fa-pencil"></i> New Note</button>
+                            <button id="newNote-button" class="btn"><i class="fa fa-pencil"></i> New Note</button>
                         </form>
                     </div>
 
@@ -84,6 +86,7 @@
             <div class="col-8 notediv">
                 <input type="text" id="notename" placeholder="Note Name"><button id="notename-btn"><i class="fa fa-save"></i></button>
                 <textarea id="notepad"></textarea>
+                <button id="savenote">Save Note</button>
             </div>
             <div class="col-2"></div>
         </div>
@@ -91,6 +94,22 @@
 
     </div>
 
+
+
+    <!-- jQuery stuff -->
+    <script>
+
+        $(document).ready(function() {
+
+            // saves the note name
+            saveNoteName();
+
+            // saves the note content
+            saveNoteContent();
+
+        });
+
+    </script>
     
 </body>
 
