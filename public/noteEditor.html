@@ -4,14 +4,11 @@
 <head>
     <title>Express Note Taker</title>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
     <!-- jquery icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- index.js -->
-    <script src="js/index.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -37,7 +34,7 @@
                 <div class="row">
 
                     <div id="header-links" class="col-4">
-                        
+
                         <div class="row">
 
                             <div class="col-4 header-linkBox1">
@@ -84,7 +81,8 @@
 
             <div class="col-2"></div>
             <div class="col-8 notediv">
-                <input type="text" id="notename" placeholder="Note Name"><button id="notename-btn"><i class="fa fa-save"></i></button>
+                <input type="text" id="notename" placeholder="Note Name"><button id="notename-btn"><i
+                        class="fa fa-save"></i></button>
                 <textarea id="notepad"></textarea>
                 <button id="savenote">Save Note</button>
             </div>
@@ -99,18 +97,8 @@
     <!-- jQuery stuff -->
     <script>
 
-        $(document).ready(function() {
-
-            // saves the note name
-            saveNoteName();
-
-            // saves the note content
-            saveNoteContent();
-
-        });
-
     </script>
-    
+
 </body>
 
 </html>
