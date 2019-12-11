@@ -101,20 +101,23 @@
     <!-- jQuery stuff -->
     <script>
 
-        const savedNote = {
-            title: $('#notename').val(),
-            content: $('#notepad').val()
-        };
+        $('#noteContent-form').click((event) => {
+            event.preventDefault();
 
-        function sendData() {
+            const data = {
+                'title': $('#notename').val().trim(),
+                'content': $('#notepad').val().trim(),
+            }
+
+            $.post("/api/savedNotes", data);
+
             $.ajax({
-                url: '/myNotes',
-                type: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify({savedNote}),
-                dataType: 'json'
+                url: '/api/savedNotes',
+                method: 'GET'
+            }).then(function (response) {
+                console.log(response);
             });
-        }
+        });
 
 
     </script>
