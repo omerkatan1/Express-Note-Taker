@@ -97,6 +97,22 @@
     <!-- jQuery stuff -->
     <script>
 
+        const savedNote = {
+            title: $('#notename').val(),
+            content: $('#notepad').val()
+        };
+
+        function sendData() {
+            $.ajax({
+                url: '/helloworld',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({savedNote}),
+                dataType: 'json'
+            });
+        }
+
+
     </script>
 
 </body>
