@@ -101,22 +101,28 @@
     <!-- jQuery stuff -->
     <script>
 
+
+
         $('#noteContent-form').click((event) => {
-            event.preventDefault();
 
             const data = {
                 'title': $('#notename').val().trim(),
                 'content': $('#notepad').val().trim(),
             }
 
+
+            event.preventDefault();
+
+            console.log(data);
+
             $.post("/api/savedNotes", data);
 
-            $.ajax({
-                url: '/api/savedNotes',
-                method: 'GET'
-            }).then(function (response) {
-                console.log(response);
-            });
+            // $.ajax({
+            //     url: '/api/savedNotes',
+            //     method: 'GET'
+            // }).then(function (response) {
+            //     console.log(response);
+            // });
         });
 
 
