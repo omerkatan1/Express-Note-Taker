@@ -101,28 +101,36 @@
     <!-- jQuery stuff -->
     <script>
 
+        const dataArray = [];
 
-
-        $('#noteContent-form').click((event) => {
-
-            const data = {
-                'title': $('#notename').val().trim(),
-                'content': $('#notepad').val().trim(),
-            }
+        $('#savenote').click((event) => {
 
 
             event.preventDefault();
 
+            const data = {
+                'title': $('#notename').val().trim(),
+                'content': $('#notepad').val().trim(),
+            };
+
+
             console.log(data);
+            dataArray.push(data);
 
-            $.post("/api/savedNotes", data);
+            $.ajax({
+                url: '/api/savedNotes',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(dataArray),
+                success: function (res) {
+                    console.log('ajax post success');
+                    console.log(JSON.stringify(data));
+                    console.log(JSON.stringify(dataArray));
 
-            // $.ajax({
-            //     url: '/api/savedNotes',
-            //     method: 'GET'
-            // }).then(function (response) {
-            //     console.log(response);
-            // });
+                }
+            });
+
+
         });
 
 
